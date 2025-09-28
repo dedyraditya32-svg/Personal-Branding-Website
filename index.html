@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedy Raditya | Personal Branding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">Dedy Raditya</a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">Tentang Saya</a>
+                <a href="#portfolio" class="nav-link">Portofolio</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+            </div>
+            <div class="nav-indicator"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="home-content">
+                <h1 id="dynamic-text"></h1>
+                <p class="static-text">IT Newbie</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="assets/foto-saya.jpg" alt="Foto Anda">
+                </div>
+                <div class="about-text">
+                    <h2>Tentang Saya</h2>
+                    <p>
+                        Perkenalkan saya Putu Dedy Raditya Pratama bisa dipanggil Dedy saya saat ini sedang menempuh pendidikan di Universitas Pendidikan Ganesha, pada Fakultas Teknik dan Kejuruan, jurusan Teknik Informatika, dan prodi Sistem Iformasi. Sebelumnya saya menempuh pendidikan di SMP Negeri 1 Amlapura sebagai siswa yang berprilaku baik. Setelah lulus SMP saya melanjutkan pendidikan di SMA Negeri 1 Amlapura sebagai seorang siswa yang mampu mengikuti kegiatan sekolah dengan baik. Meskipun belum memiliki pengalaman langsung dalam mengikuti kegiatan organisasi, saya aktif dalam kegiatan perkuliahan, memiliki semangat belajar, dan siap bekerja sama dalam tim. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portofolio</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="cv">CV</button>
+                <button class="tab-btn" data-tab="sertifikat">Sertifikat</button>
+                <button class="tab-btn" data-tab="skill">Skill</button>
+                <button class="tab-btn" data-tab="galery">Project</button>
+            </div>
+
+            <div class="tab-content active" id="cv">
+                <h3>Curriculum Vitae</h3>
+                <p>Anda dapat melihat atau mengunduh CV saya dibawah ini.</p>
+                <a href="assets/cv.pdf" class="btn" download>Unduh CV</a>
+                <div class="cv-viewer">
+                    <iframe src="assets/cv.pdf" title="Tampilan CV"></iframe>
+                </div>
+            </div>
+
+            <div class="tab-content" id="sertifikat">
+                <div class="grid-container">
+                    </div>
+            </div>
+
+            <div class="tab-content" id="skill">
+                <div class="grid-container">
+                    </div>
+            </div>
+
+            <div class="tab-content" id="galery">
+                <div class="grid-container gallery">
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-header">
+                <h2>Let's talk</h2>
+                <p>Apakah anda tertarik untuk bekerjasama ?</p>
+            </div>
+
+            <form id="contact-form" action="https://formspree.io/f/mrbyeqnr" method="POST">
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="full-name">Nama Anda</label>
+                        <input type="text" id="full-name" name="name" placeholder="Tulis Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Alamat Email Anda" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subjek</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tulis Pesan Anda" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+
+            <hr class="contact-divider">
+
+            <div class="social-links-footer">
+                <a href="mailto:dedyraditya32@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/dedy-raditya-032781378" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/dedyraditya32-svg" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/dedyraditya.myj?igsh=MWs1NWh4bG91NmFmOA==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2025 | Dibuat oleh Dedy Raditya</p>
+    </footer>
+
+    <div id="modal" class="modal-container">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close-btn">&times;</button>
+            <img id="modal-img" src="" alt="Detail Gambar">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
