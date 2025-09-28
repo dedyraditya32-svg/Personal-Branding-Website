@@ -342,5 +342,6 @@ footer { text-align: center; padding: 2rem; color: var(--secondary-text); font-s
     .tab-content > p,
     #modal-description,
     .contact-header p {
-    text-align: justify;
+        text-align: justify;
 }
+
